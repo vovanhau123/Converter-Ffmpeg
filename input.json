@@ -1,0 +1,9 @@
+[
+    {
+        "input": "/path/to/your/input/file.ts",
+        "output": "/path/to/your/output/file.mp4"
+    }
+    // Add other files to convert here
+    //nếu muốn chuyển đổi file khác .ts và .mp4 thì bạn có thể thay đổi ở đuôi đường dẫn
+    //chỉ những file được hỗ trợ bởi ffmpeg 
+]
