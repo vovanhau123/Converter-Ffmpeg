@@ -19,14 +19,14 @@ function convertVideo(inputFilePath, outputFilePath) {
                 reject(err);
             })
             .on('progress', function (progress) {
-                //console.log(`\nTiến trình chuyển đổi video từ ${inputFilePath}: ${progress.percent.toFixed(2)}+%`);
+                //console.log(`\nVideo conversion progress from ${inputFilePath}: ${progress.percent.toFixed(2)}+%`);
                 process.stdout.write(`\n Convert video progress \n ${inputFilePath}: ` + progress.percent.toFixed(2) + '%');
             })
             .run();
     });
 }
 
-// Chuyển đổi từng video
+// Convert each video
 async function batchConvert() {
     for (let file of filesToConvert) {
         console.log(`\nConvert videos from ${file.input} wall ${file.output}`);
@@ -39,5 +39,5 @@ async function batchConvert() {
     }
 }
 
-// Gọi hàm chuyển đổi
+// Call the conversion function
 batchConvert();
