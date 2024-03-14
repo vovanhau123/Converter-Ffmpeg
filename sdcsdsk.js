@@ -1,1 +1,0 @@
-tẽt nevsvdcsd
